@@ -19,7 +19,7 @@ public class SingletonVersionEight implements Serializable {
 		System.out.println("I am a member of the SingletonVersionEight instance !");
 	}
 	
-	protected Object readResolve() {
+	public Object readResolve() {
 		return singletonInstance;
 	}
 }
